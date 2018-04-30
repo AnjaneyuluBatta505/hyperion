@@ -6,12 +6,12 @@ from wtforms.validators import DataRequired, Email, URL, number_range
 class WatcherForm(Form):
 
     RUN_FREQ_CHOICES = (
-        ('5', '5 min'),
-        ('15', '15 min'),
-        ('30', '30 min'),
-        ('60', '1 hour'),
-        ('180', '3 hours'),
-        ('360', '6 hours'),
+        ('every 5 mins', '5 mins'),
+        ('every 15 mins', '15 mins'),
+        ('every 30 mins', '30 mins'),
+        ('every 1 hours', '1 hour'),
+        ('every 3 hours', '3 hours'),
+        ('every 6 hours', '6 hours'),
     )
 
     email = StringField('Email', validators=[DataRequired(), Email()])

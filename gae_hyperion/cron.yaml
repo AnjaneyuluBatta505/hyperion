@@ -1,0 +1,4 @@
+cron:
+- description: "Check http status and send email if status code not matched"
+  url: /check_status_code?url={url}&status={status}&email={email}
+  schedule: {schedule}
